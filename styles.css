@@ -24,6 +24,12 @@ p {
 
 #two {
   background-color: #c95bc7;
+  position: relative;
+  /* position element is used to make changes to the positioning. */
+  top: 20px;
+  /* position: static; */
+  /* When we set the position value to static, then nothing happens to the position
+  even if we try to moderate the positions through top/bottom elements. */
 }
 
 #three {
