@@ -1,3 +1,8 @@
+/* html {
+  margin: 50px;
+} */
+/* This would add a margin of 50px around the entire html page. */
+
 div {
   background-color: #c7c7c7;
   padding: 20px;
@@ -12,6 +17,7 @@ p {
 
 #container {
   background-color: #521751;
+  position: relative;
 }
 
 #container p {
@@ -24,12 +30,27 @@ p {
 
 #two {
   background-color: #c95bc7;
-  position: relative;
+
+  /* position: relative; */
   /* position element is used to make changes to the positioning. */
-  top: 20px;
+
+  /* top: 20px; */
+
   /* position: static; */
   /* When we set the position value to static, then nothing happens to the position
   even if we try to moderate the positions through top/bottom elements. */
+
+  /* position: fixed; */
+  /* fixed value applied elements will also scroll down while scrolling down the
+  web page. */
+
+  position: absolute;
+  top: 0;
+  /* this will put the #two content "in front" of all the html elements. 
+  If we add position absolute to an element, then it will be taken out of the 
+  document flow and be positioned relative to the first ancestor which has position
+  relative applied. In this case this would be #container. If there's nothing to 
+  be relative, then #two content will get relative to the entire html page. */
 }
 
 #three {
