@@ -17,7 +17,7 @@ p {
 
 #container {
   background-color: #521751;
-  position: relative;
+  /* position: relative; */
 }
 
 #container p {
@@ -51,6 +51,10 @@ p {
   document flow and be positioned relative to the first ancestor which has position
   relative applied. In this case this would be #container. If there's nothing to 
   be relative, then #two content will get relative to the entire html page. */
+
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #three {
