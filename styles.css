@@ -55,6 +55,10 @@ p {
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  /* box-sizing: content-box; */
+  /* content-box is the default box sizing. This takes up the entire width of the html page.
+  But we want actually is to set the width to take up the width of the other elements. for that
+  we use the border-box; value. */
 }
 
 #three {
